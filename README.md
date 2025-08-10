@@ -22,6 +22,8 @@ Built with **Python + Tkinter** (optional: ttkbootstrap for a nicer theme).
 git clone https://github.com/YourUser/Video-Audio-Converter.git
 cd Video-Audio-Converter
 
+extract ffmpeg.rar
+
 # (Optional) create virtual environment
 python -m venv .venv
 # Windows
