@@ -7,6 +7,14 @@ Built with **Python + Tkinter** (optional: ttkbootstrap for a nicer theme).
 
 ---
 
+## Requirements
+
+- **Python 3.11** (recommended and tested)
+- ffmpeg-python
+- pillow
+- ttkbootstrap *(optional, for nicer theme)*
+- FFmpeg binary (either in PATH or in `./ffmpeg/bin/ffmpeg.exe` for Windows)
+
 ## How to Run
 
 ```bash
@@ -22,8 +30,7 @@ python -m venv .venv
 source .venv/bin/activate
 
 # Install dependencies
-pip install ffmpeg-python ttkbootstrap pillow
-
+pip install -r requirements.txt
 # Run
 python main.py
 ```

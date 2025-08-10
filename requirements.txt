@@ -1,0 +1,7 @@
+# Runtime dependencies
+ffmpeg-python
+pillow
+ttkbootstrap
+
+# Build dependency
+pyinstaller
