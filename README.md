@@ -19,9 +19,6 @@ Python 3.9+ (tested on 3.11)
 
 Packages:
 
-bash
-Copy
-Edit
 pip install ffmpeg-python
 # optional (nicer theme)
 pip install ttkbootstrap
@@ -35,16 +32,12 @@ In ./ffmpeg/bin/ffmpeg.exe (Windows), or
 
 Bundled into your build via PyInstaller (see Build section).
 
-Run from Source (Dev)
-bash
-Copy
-Edit
+Run from Source 
+
 # (recommended) create and activate a venv
 python -m venv .venv
 # Windows
 .venv\Scripts\activate
-# macOS/Linux
-source .venv/bin/activate
 
 pip install -r requirements.txt  # if you add one
 # or manually:
@@ -57,9 +50,6 @@ Build (Windows, PyInstaller One-File)
 Goal: A single VideoToMP3.exe that includes FFmpeg inside.
 Assuming you put ffmpeg.exe at ./ffmpeg/bin/ffmpeg.exe and your window/taskbar icon is icon.ico.
 
-powershell
-Copy
-Edit
 pyinstaller --onefile --noconsole --icon=icon.ico --name "VideoToMP3" `
   --add-binary ".\ffmpeg\bin\ffmpeg.exe;ffmpeg\bin" `
   --add-data "icon.ico;." `
